@@ -8,13 +8,11 @@ Get data from external API in SAP ABAP
 *&---------------------------------------------------------------------*
 REPORT zabap_http.
 
-```
-TRY.
-```
 * Get data from external API
 * Define API url
 
 ```
+  TRY.
     DATA(lv_url) = |https://airport-info.p.rapidapi.com/airport?iata=CGK|.
     DATA : o_client TYPE REF TO if_http_client.
 ```
